@@ -13,7 +13,8 @@
 mongodb_repo:
   pkgrepo.managed:
     - humanname: MongoDB.org Repo
-    - name: deb http://repo.mongodb.org/apt/{{ os }} {{ code }}/mongodb-org/{{ mdb.version }} {{ mdb.repo_component }}
+    # - name: deb http://repo.mongodb.org/apt/{{ os }} {{ code }}/mongodb-org/{{ mdb.version }} {{ mdb.repo_component }}
+    - name: deb http://repo.mongodb.org/apt/{{ os }} trusty/mongodb-org/{{ mdb.version }} {{ mdb.repo_component }}
     - file: /etc/apt/sources.list.d/mongodb-org.list
     - keyid: EA312927
     - keyserver: keyserver.ubuntu.com
